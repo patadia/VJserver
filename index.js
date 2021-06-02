@@ -21,4 +21,4 @@ app.get('/confg',(req,res)=>{
     })
 });
 
-app.listen(PORT,()=> console.log('listen on port '+ PORT))
+app.listen(process.env.PORT | PORT,()=> console.log('listen on port '+ PORT))
